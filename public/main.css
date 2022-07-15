@@ -1,0 +1,67 @@
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: normal;
+    margin-top: 0;
+    min-height: 6rem;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 458px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    border-left: none;
+}
+
+.right {
+    border-right: none;
+}
+
+.top {
+    border-top: none;
+}
+
+.bottom {
+    border-bottom: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.button {
+    height: 50px;
+    width: 150px;
+    border: 3px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.disabled {
+    background-color: grey;
+    color: lightgrey;
+}
